@@ -13,8 +13,10 @@ Gem::Specification.new do |s|
   s.add_dependency('eventmachine', '~> 1.0.0')
   s.add_dependency('http_router', '>= 0.11')
   s.add_dependency('rspec', '~> 2.6')
-  s.files = Dir['README.md', 'MIT-LICENSE', 'lib/**/*', 'spec/**/*']
+  s.files = Dir['README.md', 'MIT-LICENSE', '*.gemspec', 'Rakefile', 'lib/**/*', 'spec/**/*']
   s.has_rdoc = false
+
+  s.add_development_dependency "rake"
 
   s.require_path = 'lib'
 end
